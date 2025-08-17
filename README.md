@@ -23,11 +23,13 @@
 ## 🔧 기술 스택
 
 ### 📱 HW (센서/디바이스)
+
 - **사용자 센서**
   - BLE iBeacon 기반 위치 추적 (RSSI)
   - I2C 기반 바이탈 수집: 심박, 산소포화도, 체온, 걸음 수, 낙상 감지
   - SNTP 시간 동기화
   - MQTT 실시간 데이터 전송 (`sensor/data`)
+    
 - **환경 센서**
   - ESP32 BLE iBeacon 광고 (Major/Minor + RSSI)
   - 온도·습도·조도·TVOC 센서 (ADC / GPIO / I2C)
@@ -35,13 +37,17 @@
 
 
 ### 🤖 Orin Car (자율주행 로봇)
+
 - **프레임워크**
   - ROS2 Humble / SLAM Toolbox / RF2O Laser Odometry / Nav2
+    
 - **경로 탐색**
   - Hybrid A* (SmacPlannerHybrid), Regulated Pure Pursuit (RPP)
+    
 - **ROS 노드**
   - LiDAR, RF2O, 모터 드라이버, MQTT, 웨이포인트 매니저
   - 위치 데이터 MQTT 전송 (`robot/pose`, 6초 주기)
+
 - **객체 탐지**
   - YOLOv8n 기반 person 탐지
   - Aspect ratio 기반 낙상 판정 (추가 로직 보완 예정)
@@ -50,15 +56,18 @@
 
 
 ### 🧠 AI 추론
+
 - **데이터**
   - 바이탈: 심박, SpO₂, 체온, 걸음 수  
   - 환경: 온도, 습도, 조도, TVOC  
   - 메타: 나이, 성별, 기저질환 (하루 1회 갱신)  
   - 오픈 데이터셋: [AI-Hub 독거노인 위험감지](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71803)
+
 - **모델**
   - LSTM Autoencoder (시계열 + 메타 데이터 결합)
   - Lazy Loading (window=30, step=1)
   - ROC-AUC 기반 임계값 선정 → 이상 탐지
+
 - **알림 & 보고서**
   - AI 서버 → MCP 서버 이상 이벤트 전송 (POST)
   - MCP 서버: MySQL(`patient`, `handover`), InfluxDB 조회  
@@ -66,11 +75,13 @@
 
 
 ### 🌐 WEB
+
 - **Front-end**
   - Vue 3 / vue-router / Pinia
   - Axios (API 통신)
   - Chart.js + vue-chartjs (데이터 시각화)
   - Konva + vue-konva (2D 그래픽, 맵 오버레이)
+
 - **Back-end**
   - FastAPI / Django REST Framework
   - MQTT (Mosquitto + Paho MQTT)
@@ -80,17 +91,21 @@
   - DB
     - MySQL (환자 메타 정보)
     - InfluxDB (센서 시계열, 2일 보관)
+
 - **시각화**
   - Grafana + InfluxDB → 실시간 대시보드
 
 
 ### ☁️ INFRA
+
 - **CI/CD**: Jenkins (커스텀 빌드 이미지)
+
 - **배포/호스팅**
   - Nginx (정적 리소스 + 리버스 프록시)
   - Docker (Grafana / Spring Boot / InfluxDB / Mosquitto 컨테이너)
   - Vercel (프론트엔드 호스팅)
   - AWS EC2 (서버 호스팅)
+
 - **환경 변수 관리**
   - `.env` 파일 기반 비밀값 관리
 
@@ -134,6 +149,3 @@ Backend
 
 - **프로젝트 협업의 커뮤니케이션 경험**  
   데이터팀, 프론트엔드, 백엔드 등 여러 역할 간 협업 과정에서 API 설계와 데이터 흐름 문서화의 중요성을 실감.
-
-
-
