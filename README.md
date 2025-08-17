@@ -48,7 +48,6 @@
 <details>
 <summary>🤖 <strong>Orin Car (자율주행 로봇)</strong></summary>
 <br>
-
 - **프레임워크**
   - ROS2 Humble / SLAM Toolbox / RF2O Laser Odometry / Nav2
     
@@ -68,7 +67,6 @@
 <details>
 <summary>🧠 <strong>AI 추론</strong></summary>
 <br>
-
 - **데이터**
   - 바이탈: 심박, SpO₂, 체온, 걸음 수  
   - 환경: 온도, 습도, 조도, TVOC  
@@ -90,7 +88,6 @@
 <details>
 <summary>🌐 <strong>WEB</strong></summary>
 <br>
-
 - **Front-end**
   - Vue 3 / vue-router / Pinia
   - Axios (API 통신)
@@ -115,7 +112,6 @@
 <details>
 <summary>☁️ <strong>INFRA</strong></summary>
 <br>
-
 - **CI/CD**: Jenkins (커스텀 빌드 이미지)
 
 - **배포/호스팅**
