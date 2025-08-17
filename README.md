@@ -22,7 +22,7 @@
 
 - **야간 순찰 자동화**
   - 자율주행 로봇이 LiDAR + SLAM을 활용하여 실내 경로 탐색 및 순찰 수행
-  - YOLO 기반 객체 탐지로 배회(Wander) 및 낙상(Fallen) 상황 인식
+  - YOLO 기반 Person 객체 탐지로 배회(Wander) 및 낙상(Fallen) 상황 인식
   - 탐지 시 이벤트 및 이미지 자동 전송
 
 
@@ -55,7 +55,7 @@
   - 위치 데이터 MQTT 전송
 
 - **객체 탐지**
-  - YOLOv8n 기반 person 탐지
+  - YOLOv8n 기반 Person 탐지
   - Aspect ratio 기반 낙상 판정
 
 
