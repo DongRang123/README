@@ -16,11 +16,10 @@
   - 웨어러블 아대를 통해 심박수, 산소포화도, 피부온도, 걸음 수, 낙상 여부 등을 수집
   - AI 기반 분석으로 위험 징후를 조기 감지 및 알림 전송
 
-  <p align="center">
+  <p align="left">
     <img src="docs/vital_check.gif" width="500">
   </p>
 
----
 
 - **실시간 위치 추적**
   - BLE iBeacon 신호 세기(RSSI) 기반 구역(Location) 판별
@@ -30,7 +29,6 @@
     <img src="docs/runrun.gif" width="500">
   </p>
 
----
 
 - **응급 보고서 자동 생성**
   - 이상 징후 발생 시 AI 서버가 위험 상태를 탐지
@@ -42,7 +40,6 @@
     <img src="docs/vital_alert.gif" width="400">
   </p>
 
----
 
 - **야간 순찰 자동화**
   - 자율주행 로봇이 LiDAR + SLAM을 활용하여 실내 경로 탐색 및 순찰 수행
