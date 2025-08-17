@@ -18,7 +18,6 @@
   - 온도·습도·조도·TVOC 센서 (ADC / GPIO / I2C)
   - 1초 주기 센서 데이터 MQTT 전송 (JSON 형식)
 
----
 
 ## 🤖 Orin Car (자율주행 로봇)
 - **프레임워크**
@@ -34,7 +33,6 @@
   - Wander: 탐지 후 2초 → 이벤트 전송
   - Fallen: 탐지 후 1초 → 이벤트 전송
 
----
 
 ## 🧠 AI 추론
 - **데이터**
@@ -51,7 +49,6 @@
   - MCP 서버: MySQL(`patient`, `handover`), InfluxDB 조회  
   - Claude 3.5 Haiku → 마크다운 보고서 생성 → PDF 저장
 
----
 
 ## 🌐 WEB
 - **Front-end**
@@ -71,7 +68,6 @@
 - **시각화**
   - Grafana + InfluxDB → 실시간 대시보드
 
----
 
 ## ☁️ INFRA
 - **CI/CD**: Jenkins (커스텀 빌드 이미지)
