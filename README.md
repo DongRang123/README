@@ -25,7 +25,7 @@
   - BLE iBeacon 신호 세기(RSSI) 기반 구역(Location) 판별
   - 환자의 현재 위치를 실시간 서버와 연동하여 관리
 
-  <p align="center">
+  <p align="left">
     <img src="docs/runrun.gif" width="500">
   </p>
 
@@ -35,7 +35,7 @@
   - MCP 서버를 통해 환자 메타데이터·최근 바이탈·인수인계 기록을 조합
   - AI 에이전트(Claude 3.5 Haiku)가 자동으로 마크다운 보고서 생성 및 PDF 저장
 
-  <p align="center">
+  <p align="left">
     <img src="docs/pdf.gif" width="400">
     <img src="docs/vital_alert.gif" width="400">
   </p>
@@ -46,7 +46,7 @@
   - YOLO 기반 Person 객체 탐지로 배회(Wander) 및 낙상(Fallen) 상황 인식
   - 탐지 시 이벤트 및 이미지 자동 전송
 
-  <p align="center">
+  <p align="left">
     <img src="docs/robot_detect.gif" width="500">
   </p>
 
