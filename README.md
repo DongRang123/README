@@ -28,7 +28,9 @@
 
 ## 🔧 기술 스택
 
-### 📱 HW (센서/디바이스)
+<details>
+<summary>📱 <strong>HW (센서/디바이스)</strong></summary>
+<br>
 
 - **사용자 센서**
   - BLE iBeacon 기반 위치 추적 (RSSI)
@@ -41,8 +43,11 @@
   - 온도·습도·조도·TVOC 센서 (ADC / GPIO / I2C)
   - 1초 주기 센서 데이터 MQTT 전송 (JSON 형식)
 
+</details>
 
-### 🤖 Orin Car (자율주행 로봇)
+<details>
+<summary>🤖 <strong>Orin Car (자율주행 로봇)</strong></summary>
+<br>
 
 - **프레임워크**
   - ROS2 Humble / SLAM Toolbox / RF2O Laser Odometry / Nav2
@@ -58,8 +63,11 @@
   - YOLOv8n 기반 Person 탐지
   - Aspect ratio 기반 낙상 판정
 
+</details>
 
-### 🧠 AI 추론
+<details>
+<summary>🧠 <strong>AI 추론</strong></summary>
+<br>
 
 - **데이터**
   - 바이탈: 심박, SpO₂, 체온, 걸음 수  
@@ -77,8 +85,11 @@
   - MCP 서버: MySQL(`patient`, `handover`), InfluxDB 조회  
   - Claude 3.5 Haiku → 마크다운 보고서 생성 → PDF 저장
 
+</details>
 
-### 🌐 WEB
+<details>
+<summary>🌐 <strong>WEB</strong></summary>
+<br>
 
 - **Front-end**
   - Vue 3 / vue-router / Pinia
@@ -99,8 +110,11 @@
 - **시각화**
   - Grafana + InfluxDB → 실시간 대시보드
 
+</details>
 
-### ☁️ INFRA
+<details>
+<summary>☁️ <strong>INFRA</strong></summary>
+<br>
 
 - **CI/CD**: Jenkins (커스텀 빌드 이미지)
 
@@ -109,6 +123,9 @@
   - Docker (Grafana / Spring Boot / InfluxDB / Mosquitto 컨테이너)
   - Vercel (프론트엔드 호스팅)
   - AWS EC2 (서버 호스팅)
+
+</details>
+
 
 
 ## 🔧 Project Setup
