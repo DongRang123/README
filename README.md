@@ -128,22 +128,43 @@
 
 
 
-## 🔧 Project Setup
+## 🚀 데모/서비스 바로가기
 
-### 1. 환경 변수 설정 (.env)
+- [VITAL LINK 바로가기](https://i13a107.p.ssafy.io/)
 
-프로젝트 루트 디렉토리에 `.env` 파일을 생성하고 아래 예시와 같이 환경변수를 입력하세요.
+## 👥 기타 정보
 
-```env
-# .env 예시
-OPENAI_API_KEY=your_openai_api_key
-ELASTIC_URL=https://your-elasticsearch-endpoint
-ELASTIC_API_KEY=your_elastic_api_key
-```
+### Member1
 
-Backend
-```sh
-호
+- **Name**: 박소정
+- **Position**: 
+- **E-Mail**: 
+- **username**: 
+
+### Member2
+
+- **Name**: 박상찬
+- **Position**: 
+- **E-Mail**: 
+- **username**: 
+
+### Member3
+
+- **Name**: 이동윤
+- **Position**: 
+- **E-Mail**: 
+- **username**: 
+
+### Member4
+
+- **Name**: 김진구
+- **Position**: 
+- **E-Mail**: jso732@naver.com
+- **username**: DongRang123
+
+### Member5
+
+- **Name**: 구동우
 - **Position**: 
 - **E-Mail**: 
 - **username**: 
