@@ -36,8 +36,8 @@
   - AI 에이전트(Claude 3.5 Haiku)가 자동으로 마크다운 보고서 생성 및 PDF 저장
 
   <p align="left">
-    <img src="docs/pdf.gif" width="400">
     <img src="docs/vital_alert.gif" width="400">
+    <img src="docs/pdf.gif" width="400">
   </p>
 
 
@@ -47,7 +47,8 @@
   - 탐지 시 이벤트 및 이미지 자동 전송
 
   <p align="left">
-    <img src="docs/robot_detect.gif" width="500">
+    <img src="docs/robot_detect.gif" width="400">
+    <img src="docs/robot.gif" width="400">
   </p>
 
 
