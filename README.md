@@ -17,7 +17,7 @@
   - AI 기반 분석으로 위험 징후를 조기 감지 및 알림 전송
 
   <p align="left">
-    <img src="docs/vital_check.gif" width="500">
+    <img src="docs/GIF/vital_check.gif" width="500">
   </p>
 
 
@@ -26,7 +26,7 @@
   - 환자의 현재 위치를 실시간 서버와 연동하여 관리
 
   <p align="left">
-    <img src="docs/run.gif" width="500">
+    <img src="docs/GIF/run.gif" width="500">
   </p>
 
 
@@ -36,8 +36,8 @@
   - AI 에이전트(Claude 3.5 Haiku)가 자동으로 마크다운 보고서 생성 및 PDF 저장
 
   <p align="left">
-    <img src="docs/vital_alert.gif" width="400">
-    <img src="docs/pdf.gif" width="400">
+    <img src="docs/GIF/vital_alert.gif" width="400">
+    <img src="docs/GIF/pdf.gif" width="400">
   </p>
 
 
@@ -47,7 +47,7 @@
   - 탐지 시 이벤트 및 이미지 자동 전송
 
   <p align="left">
-    <img src="docs/robot_detect.gif" width="400">
+    <img src="docs/GIF/robot_detect.gif" width="400">
     <img src="docs/robot.gif" width="400">
   </p>
 
@@ -169,3 +169,26 @@
 | [전유진](https://www.notion.so/2325477005b08180b43eed738a5c2411) | Developer | HW (User Device) |
 | [진영호](https://www.notion.so/2325477005b081ab9399cfd87e57fd24) | Developer | HW (Autonomous Driving) |
 
+
+## 📄 산출물
+
+#### 최종발표자료
+[😎 캔바 링크]
+
+#### 아키텍쳐
+<p align="left">
+    <img src="docs/PNG/architechture.png" width="400">
+</p>
+
+#### 웹 와이어프레임
+<p align="left">
+  <img src="docs/PNG/wireframe1.png" width="400">
+  <img src="docs/PNG/wireframe2.png" width="400">
+  <img src="docs/PNG/wireframe3.png" width="400">
+  <img src="docs/PNG/wireframe4.png" width="400">
+</p>
+
+#### ERD
+<p align="left">
+    <img src="docs/PNG/ERD.png" width="400">
+</p>
