@@ -15,23 +15,28 @@
 - **실시간 생체 모니터링**
   - 웨어러블 아대를 통해 심박수, 산소포화도, 피부온도, 걸음 수, 낙상 여부 등을 수집
   - AI 기반 분석으로 위험 징후를 조기 감지 및 알림 전송
+    
   <img src="docs/vital_check.gif" width=200>
 
 - **실시간 위치 추적**
   - BLE iBeacon 신호 세기(RSSI) 기반 구역(Location) 판별
   - 환자의 현재 위치를 실시간 서버와 연동하여 관리
+    
   <img src="docs/runrun.gif" width=200>
 
 - **응급 보고서 자동 생성**
   - 이상 징후 발생 시 AI 서버가 위험 상태를 탐지
   - MCP 서버를 통해 환자 메타데이터·최근 바이탈·인수인계 기록을 조합
   - AI 에이전트(Claude 3.5 Haiku)가 자동으로 마크다운 보고서 생성 및 PDF 저장
+    
   <img src="docs/pdf.gif" width=200>
+  <img src="docs/vital_alert.gif" width=200>
 
 - **야간 순찰 자동화**
   - 자율주행 로봇이 LiDAR + SLAM을 활용하여 실내 경로 탐색 및 순찰 수행
   - YOLO 기반 Person 객체 탐지로 배회(Wander) 및 낙상(Fallen) 상황 인식
   - 탐지 시 이벤트 및 이미지 자동 전송
+    
   <img src="docs/robot_detect.gif" width=200>
 
 
