@@ -5,18 +5,83 @@
 **VITAL LINK**는 고령화가 가속화된 사회에서 요양관리사의 부족해진 인력을 도와줄 수 있는 AI기반 고령자 모니터링 시스템입니다. 자율 주행 로봇 야간 순찰 및 시니어 분들의 실시간 건강 상태 감지를 기본으로 안전하고 지속 가능한 돌봄 환경을 제공합니다.
 
 
-## 🔧 기술 스택
+# 🔧 기술 스택
 
-- **Front-end**:  
-  - Vercel (정적 웹 호스팅)
-- **Back-end**:  
-  - FastAPI (Python 기반 REST API 서버)
-- **AI/LLM**:  
-  - OpenAI GPT-4o-mini (LLM 기반 질의응답, 자연어 처리)
-- **Vector DB & 검색**:  
-  - Elasticsearch (벡터/키워드 혼합 검색)
-- **인프라/배포**:  
-  - AWS (EC2)
+## 📱 HW (센서/디바이스)
+- **사용자 센서**
+  - BLE iBeacon 기반 위치 추적 (RSSI)
+  - I2C 기반 바이탈 수집: 심박, 산소포화도, 체온, 걸음 수, 낙상 감지
+  - SNTP 시간 동기화
+  - MQTT 실시간 데이터 전송 (`sensor/data`)
+- **환경 센서**
+  - ESP32 BLE iBeacon 광고 (Major/Minor + RSSI)
+  - 온도·습도·조도·TVOC 센서 (ADC / GPIO / I2C)
+  - 1초 주기 센서 데이터 MQTT 전송 (JSON 형식)
+
+---
+
+## 🤖 Orin Car (자율주행 로봇)
+- **프레임워크**
+  - ROS2 Humble / SLAM Toolbox / RF2O Laser Odometry / Nav2
+- **경로 탐색**
+  - Hybrid A* (SmacPlannerHybrid), Regulated Pure Pursuit (RPP)
+- **ROS 노드**
+  - LiDAR, RF2O, 모터 드라이버, MQTT, 웨이포인트 매니저
+  - 위치 데이터 MQTT 전송 (`robot/pose`, 6초 주기)
+- **객체 탐지**
+  - YOLOv8n 기반 person 탐지
+  - Aspect ratio 기반 낙상 판정 (추가 로직 보완 예정)
+  - Wander: 탐지 후 2초 → 이벤트 전송
+  - Fallen: 탐지 후 1초 → 이벤트 전송
+
+---
+
+## 🧠 AI 추론
+- **데이터**
+  - 바이탈: 심박, SpO₂, 체온, 걸음 수  
+  - 환경: 온도, 습도, 조도, TVOC  
+  - 메타: 나이, 성별, 기저질환 (하루 1회 갱신)  
+  - 오픈 데이터셋: [AI-Hub 독거노인 위험감지](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71803)
+- **모델**
+  - LSTM Autoencoder (시계열 + 메타 데이터 결합)
+  - Lazy Loading (window=30, step=1)
+  - ROC-AUC 기반 임계값 선정 → 이상 탐지
+- **알림 & 보고서**
+  - AI 서버 → MCP 서버 이상 이벤트 전송 (POST)
+  - MCP 서버: MySQL(`patient`, `handover`), InfluxDB 조회  
+  - Claude 3.5 Haiku → 마크다운 보고서 생성 → PDF 저장
+
+---
+
+## 🌐 WEB
+- **Front-end**
+  - Vue 3 / vue-router / Pinia
+  - Axios (API 통신)
+  - Chart.js + vue-chartjs (데이터 시각화)
+  - Konva + vue-konva (2D 그래픽, 맵 오버레이)
+- **Back-end**
+  - FastAPI / Django REST Framework
+  - MQTT (Mosquitto + Paho MQTT)
+    - QoS 0: 초단위 센서 데이터
+    - QoS 2: 로봇 제어 명령
+  - SSE (Server-Sent Events) → 실시간 데이터 전송
+  - DB
+    - MySQL (환자 메타 정보)
+    - InfluxDB (센서 시계열, 2일 보관)
+- **시각화**
+  - Grafana + InfluxDB → 실시간 대시보드
+
+---
+
+## ☁️ INFRA
+- **CI/CD**: Jenkins (커스텀 빌드 이미지)
+- **배포/호스팅**
+  - Nginx (정적 리소스 + 리버스 프록시)
+  - Docker (Grafana / Spring Boot / InfluxDB / Mosquitto 컨테이너)
+  - Vercel (프론트엔드 호스팅)
+  - AWS EC2 (서버 호스팅)
+- **환경 변수 관리**
+  - `.env` 파일 기반 비밀값 관리
 
 
 
