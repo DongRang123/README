@@ -132,42 +132,15 @@
 
 - [VITAL LINK 바로가기](https://i13a107.p.ssafy.io/)
 
-## 👥 기타 정보
-
-### Member1
-
-- **Name**: 박소정
-- **Position**: 
-- **E-Mail**: 
-- **username**: 
-
-### Member2
-
-- **Name**: 박상찬
-- **Position**: 
-- **E-Mail**: 
-- **username**: 
-
-### Member3
-
-- **Name**: 이동윤
-- **Position**: 
-- **E-Mail**: 
-- **username**: 
-
-### Member4
-
-- **Name**: 김진구
-- **Position**: 
-- **E-Mail**: jso732@naver.com
-- **username**: DongRang123
-
-### Member5
-
-- **Name**: 구동우
-- **Position**: 
-- **E-Mail**: 
-- **username**: 
+## 👥 Team Members
+| Profile | Role | Position |
+|---------|------|-----------|
+| [이수정] | Team Leader | PM, HW(Environment Device) |
+| [김진구](https://www.notion.so/174ffc8046b6803ea1a9db8496650681) | Developer | AI (Computer Vision)| 
+| [오승연](https://www.notion.so/174ffc8046b680a1af91d4b4e712e9c1) | Developer | AI (Inference,MCP)|
+| [이권민](https://www.notion.so/174ffc8046b6808f97edc2625c93e472) | Developer | BE, FE, Infra  |
+| [전유진](https://www.notion.so/174ffc8046b6807894d5df96d652b597) | Developer | HW (User Device) |
+| [진영호](https://www.notion.so/174ffc8046b6807a9716f5807a90f255) | Developer | HW (Autonomous Driving) |
 
 ## 🧠 배운 점
 
