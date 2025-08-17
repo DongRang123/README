@@ -135,12 +135,12 @@
 ## 👥 Team Members
 | Profile | Role | Position |
 |---------|------|-----------|
-| [이수정] | Team Leader | PM, HW(Environment Device) |
-| [김진구](https://www.notion.so/174ffc8046b6803ea1a9db8496650681) | Developer | AI (Computer Vision)| 
-| [오승연](https://www.notion.so/174ffc8046b680a1af91d4b4e712e9c1) | Developer | AI (Inference,MCP)|
-| [이권민](https://www.notion.so/174ffc8046b6808f97edc2625c93e472) | Developer | BE, FE, Infra  |
-| [전유진](https://www.notion.so/174ffc8046b6807894d5df96d652b597) | Developer | HW (User Device) |
-| [진영호](https://www.notion.so/174ffc8046b6807a9716f5807a90f255) | Developer | HW (Autonomous Driving) |
+| [이수정](https://www.notion.so/2325477005b0819eb723f58b9eec0c36) | Team Leader | PM, HW(Environment Device) |
+| [김진구](https://www.notion.so/2325477005b0813bb3ecf25bcae9dd3a) | Developer | AI (Computer Vision)| 
+| [오승연](https://www.notion.so/2325477005b081c587d1f80c19d3dd39) | Developer | AI (Inference,MCP)|
+| [이권민](https://www.notion.so/2325477005b0812b8413ec80b23240df) | Developer | BE, FE, Infra  |
+| [전유진](https://www.notion.so/2325477005b08180b43eed738a5c2411) | Developer | HW (User Device) |
+| [진영호](https://www.notion.so/2325477005b081ab9399cfd87e57fd24) | Developer | HW (Autonomous Driving) |
 
 ## 🧠 배운 점
 
