@@ -26,7 +26,7 @@
   - 환자의 현재 위치를 실시간 서버와 연동하여 관리
 
   <p align="left">
-    <img src="docs/runrun.gif" width="500">
+    <img src="docs/run.gif" width="500">
   </p>
 
 
@@ -108,7 +108,7 @@
 
 - **알림 & 보고서**
   - AI 서버 → MCP 서버 이상 이벤트 전송 (POST)
-  - MCP 서버: MySQL(`patient`, `handover`), InfluxDB 조회  
+  - MCP 서버: MySQL(`patient`, `handover`) 
   - Claude 3.5 Haiku → 마크다운 보고서 생성 → PDF 저장
 
 </details>
